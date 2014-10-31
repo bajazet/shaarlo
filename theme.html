@@ -1,0 +1,369 @@
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Shaarlo</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link rel="apple-touch-icon" href="favicon.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.css?v=7" type="text/css" media="screen">
+	<link rel="alternate" type="application/rss+xml" href="http://shaarli.fr/?do=rss" title="Shaarlo Feed">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	</head>
+
+<body>
+	<header id="header">
+				
+		<div class="logo">
+			<a href="/">
+				<img width="48px" alt="Logo" src="https://raw.githubusercontent.com/octplane/Shiny-Shaarli/master/src/assets/128x128.png">
+				<h1>Shaarli</h1>
+			</a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.php">Accueil</a></li>
+				<li><a href="index.php?sortBy=rand&amp;from=2000-09-16">Aléatoire</a></li>
+				<li><a href="my.php">My</a></li>
+				<li><a href="opml.php?mod=opml">OPML</a></li>
+				<li><a href="https://nexen.mkdir.fr/shaarli-river/" id="river">Shaarli River</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- <div id="header">
+		
+		
+		
+		
+		
+		<h1 id="top">
+			<a href="./index.php">Du 30/11/2012 au 30/11/9012 - Tri par : Date (décroissant)</a>
+		</h1>
+		<form method="GET" action="index.php" id="searchform">
+			<input id="searchbar" type="text" name="q" placeholder="Rechercher un article" value="docker">
+			<input name="from" type="hidden" value="20130000">
+			<input name="to" type="hidden" value="90130000"></form>
+		<div class="options-extend">
+			<button onclick="option_extend(this)">(+)</button>
+		</div>
+		<div class="pagination">
+			<div id="bloc-filtre" class="hidden">
+				<form action="index.php" method="GET">
+					<fieldset id="fielset-filtrer">
+						<legend>Filtrer les articles :</legend>
+						<label for="sortBy">Mot clef</label>
+						<input type="text" name="q" placeholder="shaarli,linux,..." value="docker">
+						<label for="from">Du</label>
+						<input id="from" name="from" type="date" value="2012-11-30">
+						<label for="to">Au</label>
+						<input id="to" name="to" type="date" value="9012-11-30" max="2014-10-30">
+						<label for="pop">Popularité</label>
+						<input id="pop" name="pop" type="number" value="0" min="0">
+						<label for="limit">Limite</label>
+						<input id="limit" name="limit" type="number" min="0" max="300" value="300"></fieldset>
+					<fieldset>
+						<legend>Options de tri :</legend>
+						<label for="sortBy">Trier par</label>
+						<select id="sortBy" name="sortBy">
+							<option value="date" selected>Date</option>
+							<option value="pop">Popularité</option>
+						</select>
+						<label for="sort">Par ordre</label>
+						<select name="sort">
+							<option value="desc" selected>Décroissant</option>
+							<option value="asc">Croissant</option>
+						</select>
+					</fieldset>
+					<input id="valider" type="submit" value="Valider"></form>
+			</div>
+			<div class="clear"></div>
+			<div class="liens">
+				<a href="?from=20121129000000&amp;to=20121129235959">Jour précédent</a>
+				<a href="?from=20121201000000&amp;to=20121201235959">/ Jour suivant</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div> -->
+
+
+
+
+	<div id="dashboard_icon">
+		<a href="#" onclick="showDashboard()">@</a>
+	</div>
+	<div id="dashboard">
+		<h4>Connecter mon shaarli</h4>
+		<form method="POST" action="?" name="loadform" id="loadform">
+			<input id="shaarli" name="shaarli" tabindex="1" type="text" value="" placeholder="http://domain.ext/shaarli">
+			<br>
+			<input type="submit" value="Charger ma conf"></form>
+		<div>
+			<small>
+				<a href="#" onclick="hideDashboard()">x Fermer cette vilaine fenêtre</a>
+			</small>
+		</div>
+	</div>
+	<div id="content">
+		<div class="article not-read">
+			<div style="font-size:2em;">
+				<a id="link1" style="display:hidden;" href="#link1"></a>
+			</div>
+			<h2 class=" article-title ">
+				<a title="Go to original place" href="https://registry.hub.docker.com/u/nshou/elasticsearch-kibana/" class="wot" onmouseup="ireadit(this, '76cfbc5843f6c64f372ffc4211ae6c63')">
+					nshou/elasticsearch-kibana Repository | Docker Hub Registry - Repositories of Docker Images
+				</a>
+			</h2>
+			<div class="article-content">
+				<a href="https://links.phyks.me/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/6c09950be91d3f5031af43ebdd8eef9c.ico"/>
+				</a>
+				<span class="entete-pseudo"> <b><a href="https://links.phyks.me/">phyks</a></b> 
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+			</div>
+			<div></div>
+		</div>
+		<!-- <hr class="article-separateur"> -->
+		<div class="article not-read">
+			<div style="font-size:2em;">
+				<a id="link2" style="display:hidden;" href="#link2"></a>
+			</div>
+			<h2 class=" article-title toptopic">
+				<a title="Go to original place" href="http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/" class="wot" onmouseup="ireadit(this, '74c4687236e6617cbf58b64bfc47457a')">
+					If you run SSHD in your Docker containers, you're doing it wrong! [2]
+				</a>
+			</h2>
+			<div class="article-content">
+				<a href="https://goldy.furry.fr/shaarli/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/a20dfcee55e98511ae93941abd421074.ico"/>
+				</a>
+				<span class="entete-pseudo"> <b><a href="https://goldy.furry.fr/shaarli/">Goldy</a></b> 
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+				<br/>
+				nsenter permet de se connecter a un conteneur docker sans faire tourner de ssh a l'interieur.
+				<br/>
+				<br/>
+				<a href="https://links.phyks.me/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/6c09950be91d3f5031af43ebdd8eef9c.ico"/>
+				</a>
+				<span class="entete-pseudo">
+					<b>
+						<a href="https://links.phyks.me/">phyks</a>
+					</b>
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+				
+				<br/>
+				<br/>
+			</div>
+			<div></div>
+		</div>
+		
+		<div class="article not-read">
+			<div style="font-size:2em;">
+				<a id="link6" style="display:hidden;" href="#link6"></a>
+			</div>
+			<h2 class=" article-title ">
+				<a title="Go to original place" href="https://blog.bearstech.com/2014/10/template-a-pex-tool-for-docker.html" class="wot" onmouseup="ireadit(this, '65686f949759291cb254562c01a1f21f')">µtemplate, a PEX tool for Docker | Bearstech Blog</a>
+			</h2>
+			<div class="article-content">
+				<a href="https://fralef.me/links/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/63a61a22845f07c89e415e5d98d5a0f5.ico"/>
+				</a>
+				<span class="entete-pseudo">
+					<b>
+						<a href="https://fralef.me/links/">jeekajoo</a>
+					</b>
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+				<br/>
+				&quot;&quot;&quot;
+				<br />
+				...
+				<br />
+				I don’t trust python system packages : half are rotten. Virtualenv + Pip, just for providing a tool inside Docker? Oversized.
+				<br />
+				<br />
+				Lets PEX. PEX is one of the secret weapons of Twitter. PEX is for Python EXecutable. PEX is a single file, embeding dependencies and an executable module. This file is a ZIP archive. The ZIP format accepts arbitrary headers, and python can load modules in a ZIP, PEX married both.
+				<br />
+				...
+				<br />
+				&quot;&quot;&quot;
+				<br />
+				pex est un outil plutôt cool pour packager des applis python.
+				<br />
+				on est pas obligé d'utiliser docker pour en avoir besoin.
+				<br />
+				doc:
+				<a href="http://pex.readthedocs.org/en/latest/" rel="nofollow">http://pex.readthedocs.org/en/latest/</a>
+				<br />
+				video:
+				<a href="http://www.youtube.com/watch?v=NmpnGhRwsu0" rel="nofollow">http://www.youtube.com/watch?v=NmpnGhRwsu0</a>
+				
+				<br/>
+				<br/>
+			</div>
+			<div></div>
+		</div>
+		<!-- <hr class="article-separateur"> -->
+		<div class="article not-read">
+			<div style="font-size:2em;">
+				<a id="link7" style="display:hidden;" href="#link7"></a>
+			</div>
+			<h2 class=" article-title toptopic">
+				<a title="Go to original place" href="https://blog.bearstech.com/2014/10/isolation-par-docker.html" class="wot" onmouseup="ireadit(this, 'b68ac6a45a30a44c202453ca2634df6d')">Isolation par Docker | Bearstech Blog [2]</a>
+			</h2>
+			<div class="article-content extended">
+				<a href="https://fralef.me/links/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/63a61a22845f07c89e415e5d98d5a0f5.ico"/>
+				</a>
+				<span class="entete-pseudo">
+					<b>
+						<a href="https://fralef.me/links/">jeekajoo</a>
+					</b>
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+				<br/>
+				quelques points:
+				<br />
+				- utilisation de &quot;docker exec&quot; apparu dans la version 1.3 qui est sortie il y a 6 jours à l'heure où j'écris.
+				<br />
+				- accès à la socket X11 de l’hôte au container
+				<br />
+				- accès à la socket tcp pulseaudio de l'hôte au container
+				<br />
+				- c'est moins chiant que apparmor et ça peut donc servir à isoler des trucs potentiellement dangereux comme des logiciels proprios.
+				<br />
+				- quelques dockerfiles pour différents logiciels: chrome, teamviewer, firefox, vlc, etc.. :
+				<a href="https://github.com/hybris42/dockerfiles" rel="nofollow">https://github.com/hybris42/dockerfiles</a>
+		
+				<br/>
+				<br/>
+				<a href="http://shaarli.cafai.fr/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/c139b98b75d7d04953637256e40d0fae.ico"/>
+				</a>
+				<span class="entete-pseudo">
+					<b>
+						<a href="http://shaarli.cafai.fr/">CAFAI</a>
+					</b>
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+				<br/>
+				Le linuxien prudent n’aime pas les surprises. Pour limiter les surprises que peut faire une application, il faut tout simplement l’isoler.
+				<br />
+				<br />
+				Sans aller jusqu’à Bash (ahem…), ne pas vouloir que Skype, Chrome, Steam, Minecraft, … et même Firefox voient le reste du système est plus que légitime.
+				<br />
+				<br />
+				La solution la plus traditionnelle est le classique chroot, facile à mettre en place, mais à la réputation controversée (surtout par les gens utilisant les jails de BSD).
+				<br />
+				<br />
+				Apparmor propose aussi sa solution, mais sans faire rêver plus que ça.
+				<br />
+				<br />
+				Niveau buzzword, ces technologies sont quand même à la ramasse, pourquoi ne pas utiliser tout bêtement Docker?
+				<br />
+				<br />
+				Docker est tout simplement un outil conçu pour lancer une application dans un contexte (RAM, CPU, disque, réseau), de manière simple et économe. Personne ne vous oblige a y accoler le mot Cloud, que vous avez déjà tant de mal à expliquer.
+				<br />
+				<br />
+				Isoler une application consiste à ne lui donner accès qu’aux services dont elle a besoin, et de manière explicite.
+				
+				<br/>
+				<br/>
+			</div>
+			<div></div>
+			<div class="action-extend">
+				<button class="button-extend" onclick="extend(this)">...</button>
+			</div>
+		</div>
+
+		<div class="article not-read">
+			<div style="font-size:2em;">
+				<a id="link28" style="display:hidden;" href="#link28"></a>
+			</div>
+			<h2 class=" article-title ">
+				<a title="Go to original place" href="http://fspot.org/plk/docker.html" class="wot" onmouseup="ireadit(this, 'bb3f10a0b925b3743bf10c36b5e57fab')">Docker - Présentation</a>
+			</h2>
+			<div class="article-content">
+				<a href="http://fspot.org/lnk/">
+					<img class="entete-avatar" width="16" height="16" src="http://shaarli.fr/img/favicon/21156e1446e9ff88544c9325773bf83b.ico"/>
+				</a>
+				<span class="entete-pseudo">
+					<b>
+						<a href="http://fspot.org/lnk/">fspot</a>
+					</b>
+					&nbsp;<i class="fa fa-clock-o"></i><a> 27/10/2014 à 21:11</a>
+					&nbsp;<i class="fa fa-link"></i><a> Permalink</a>
+					&nbsp;<i class="fa fa-at"></i><a> Suivre</a>
+				</span>
+				<br/>
+				Un article sur docker réalisé à l'occasion de présentations de mon cours de système distribués.
+				<br />
+				J'y parle un peu du fonctionnement, un peu des commandes, un peu des dockerfiles, un peu des volumes/links, un peu des cas d'utilisation.
+				<br />
+				<br />
+				D'autres billets sur le sujet en français :
+				<br />
+				-
+				<a href="http://jolicode.com/blog/naviguer-sur-votre-infrastructure-avec-docker" rel="nofollow">
+					http://jolicode.com/blog/naviguer-sur-votre-infrastructure-avec-docker
+				</a>
+				<br />
+				-
+				<a href="http://www.infoq.com/fr/articles/docker-sous-le-capot" rel="nofollow">http://www.infoq.com/fr/articles/docker-sous-le-capot</a>
+				<br />
+				Sinon, en anglais, la doc officielle est très bien, le blog officiel également, et une recherche &quot;docker&quot; sur speakerdeck, youtube ou slideshare est assez fructueuse.
+				<br />
+				<br />
+				EDIT : Voir aussi ce topic :
+				<a href="http://progdupeu.pl/forums/sujet/383/histoire-de-se-contenir" rel="nofollow">http://progdupeu.pl/forums/sujet/383/histoire-de-se-contenir</a>
+				
+				<br/>
+				<br/>
+			</div>
+			<div></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="pagination">
+		<div class="liens">
+			<i class="fa fa-chevron-left fa-2x circle"></i>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-chevron-right fa-2x circle"></i>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<footer id="footer">
+		
+		<p>
+			Please contact
+			<a href="mailto:contact@shaarli.fr">me</a>
+			for any comments -
+			<a href="https://github.com/DMeloni/shaarlo">sources on github</a>
+		</p>
+	</footer>
+	<script> function getMy(){ document.forms["loginform"].action = "https://www.shaarli.fr/my/" + document.getElementById('pseudo').value + "/"; document.forms["loginform"].submit(); } function showDashboard(){ document.getElementById('content').className = 'dashboarded'; addClass(document.getElementById('panel-best'), 'dashboarded'); document.getElementById("dashboard_icon").style.display="none"; document.getElementById("dashboard").style.display="block"; } function hideDashboard(){ document.getElementById('content').className = ''; removeClass(document.getElementById('panel-best'), 'dashboarded'); document.getElementById("dashboard_icon").style.display="block"; document.getElementById("dashboard").style.display="none"; } function extend(him) { him.parentNode.parentNode.childNodes[2].style.maxHeight = '10000px'; him.style.display = 'none'; } function option_extend(him) { removeClass(document.getElementById('bloc-filtre'), 'hidden'); addClass(document.getElementById('searchform'), 'hidden'); addClass(him, 'hidden'); } function removeClass(el, name) { if (hasClass(el, name)) { el.className=el.className.replace(new RegExp('(\\s|^)'+name+'(\\s|$)'),' ').replace(/^\s+|\s+$/g, ''); } } function hasClass(el, name) { return new RegExp('(\\s|^)'+name+'(\\s|$)').test(el.className); } function addClass(el, name) { if (!hasClass(el, name)) { el.className += (el.className ? ' ' : '') +name; } } function getChar(event) { if (event.which == null) { return event.keyCode; } else if (event.which!=0 && event.charCode!=0) { return event.which; } else { return null; } } function ireadit(him, id) { var r = new XMLHttpRequest(); var params = "do=ireadit&id=" + id; r.open("POST", "add.php", true); r.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); r.onreadystatechange = function () { if (r.readyState == 4) { if(r.status == 200){ var blocArticle = him.parentNode.parentNode; removeClass(blocArticle, 'not-read'); addClass(blocArticle, 'read'); } return true; } }; r.send(params); } document.onkeypress = function(event) { var char = getChar(event); if(char == '339') { var els = document.getElementsByClassName("button-extend"); Array.prototype.forEach.call(els, function(el) { extend(el); }); } return true; } </script>
+</body>
+</html>
